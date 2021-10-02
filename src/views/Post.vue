@@ -1,9 +1,9 @@
 <template>
-  <div v-if="post && user">
+  <template v-if="post && user">
     <h1 class="text-3xl">{{ post.title }}</h1>
     <div class="text-gray-500 mb-10">by {{ user.name }}</div>
     <div>{{ post.body }}</div>
-  </div>
+  </template>
 </template>
 
 <script setup async>
